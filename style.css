@@ -1,0 +1,635 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: #000; */
+}
+
+/* ===========NAVBAR=========== */
+.navbar {
+  height: 8vh;
+  width: 100%;
+  /* position: relative; */
+  z-index: 1;
+  background-color: #2c4c3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 1;
+  margin: 0;
+}
+.navbar > .logo > .logoheader {
+  font-family: "Gruppo", cursive;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar > .linkContainer > a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: inset 0 0 0 0 #747e81;
+  padding: 0 0.5rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar > .linkContainer > a:hover {
+  box-shadow: inset 100px 0 0 0 #4f885f;
+  color: white;
+}
+.navbar > .login > button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background: none;
+  border: 1px solid wheat;
+  color: white;
+  cursor: pointer;
+}
+.navbar > .login > button:hover {
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 2px;
+  border: 1px solid #4f885f;
+  color: #4f885f;
+}
+/* ===================Landing Page============================= */
+.HeroSection > .heroheader {
+  font-family: "Gruppo", cursive;
+  color: white;
+  font-size: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HeroSection{
+  z-index: 1;
+}
+.container {
+  /* background-image: url("https://images.pexels.com/photos/1083515/pexels-photo-1083515.jpeg?auto=compress&cs=tinysrgb&w=1600"); */
+  background-color: #2c4c3b;
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  overflow: hidden;
+}
+.container > .image1{
+  border-radius: 47% 53% 50% 50% / 34% 29% 71% 66% ;
+  border: 1px solid white;
+  height: 600px;
+  background-image: url("https://img.freepik.com/free-photo/landscape-tropical-green-forest_181624-30814.jpg?w=1380&t=st=1682167503~exp=1682168103~hmac=fae36e18d983c5a2264ce7daa11f2e680a1baa524a7267014697bd00b8421a81");
+  width: 600px;
+  position: absolute;
+  bottom: -10%;
+  
+  left: -10%;
+}
+.container > .image2{
+  border-radius: 35% 65% 40% 60% / 63% 47% 53% 37% ;
+  border: 1px solid white;
+  height: 600px;
+  background-image: url("https://img.freepik.com/free-photo/aerial-view-green-forest_144627-45271.jpg?w=1380&t=st=1682167689~exp=1682168289~hmac=b9b42ec6af018ad515fa094bbc97c7a87d1f9b6a67f6353e016f2c0d1ee2a81b");
+  width: 600px;
+  position: absolute;
+  /* bottom: -10%; */
+  right: -10%;
+  top: 3%;
+}
+.container > .image3{
+  border-radius: 47% 53% 50% 50% / 34% 29% 71% 66% ;
+  border: 1px solid white;
+  height: 400px;
+  background-image: url("https://img.freepik.com/free-photo/curvy-narrow-muddy-road-dark-forest-surrounded-by-greenery-little-light-coming-from_181624-1825.jpg?w=1380&t=st=1682168148~exp=1682168748~hmac=2e49c357ae1b06e633e6716454a6cb7ddea96bd12a1283c8a787c90b5e3d4ff4");
+  width: 400px;
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+}
+
+.container > .HeroSection > .dynamic-text {
+  /* background: rebeccapurple; */
+  overflow: hidden;
+  height: 155px;
+}
+.container > .HeroSection > .dynamic-text li {
+  list-style: none;
+  font-size: 10rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gruppo", cursive;
+  color: white;
+  top: 0;
+  /* background-color: #041c32; */
+  position: relative;
+  animation: slide 4s steps(3) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -480px;
+  }
+}
+.container > .HeroSection > .dynamic-text li span {
+  position: relative;
+}
+.container > .HeroSection > .dynamic-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  background-color: #2c4c3b;
+  border-left: 2px solid white;
+  animation: typing 1.3s steps(9) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+}
+/* ====================CONTENT PAGE============================ */
+
+.secondContainer {
+  display: flex;
+}
+.imgCar {
+  width: 20vw;
+  height: 100vh;
+}
+.imgCar > h4{
+  padding: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100;
+}
+.first ,.second ,.third ,.fourth ,.fifth {
+  /* background-color: rebeccapurple; */
+  /* background-image: url("https://img.freepik.com/free-vector/save-planet-concept-with-people-taking-care-earth_23-2148522570.jpg?w=826&t=st=1682165867~exp=1682166467~hmac=e3164c6c5d80f16447a6b497452a076b46a6478f85261c83a55ac7bb48769e28"); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s ease-in-out;
+}
+.first > p ,.second > p ,.third  > p,.fourth > p,.fifth > p{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  font-size: 1.2rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.first > img ,.second > img  ,.third > img , .fourth > img , .fifth > img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: .3s ease-in-out;
+}
+.first:hover img ,.second:hover img ,.third:hover img ,.fourth:hover img ,.fifth:hover img{
+  /* background-color: green; */
+  width: 35vw;
+  width: 200px;
+  height: 200px;
+}
+.fifth {
+  background-color: aquamarine;  
+  transition: 0.7s ease-in-out;
+}
+.first:hover {
+  /* background-color: green; */
+  width: 35vw;
+}
+.second:hover {
+  /* background-color: green; */
+  width: 35vw;
+}
+.third:hover {
+  /* background-color: green; */
+  width: 35vw;
+}
+.fourth:hover {
+  /* background-color: green; */
+  width: 35vw;
+}
+.fifth:hover {
+  /* background-color: green; */
+  width: 35vw;
+}
+.second {
+  transition: 0.4s ease-in-out;
+  background-color: red;
+}
+.third {
+  transition: 0.4s ease-in-out;
+  background-color: blue;
+}
+.fourth {
+  transition: 0.4s ease-in-out;
+  background-color: blanchedalmond;
+}
+
+/* ===============BANNER===================== */
+
+.thirdContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #041c32;
+  /* 1010718 */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainContainer {
+  width: 80vw;
+  /* margin-top: 130px; */
+  height: 80vh;
+  border-radius: 30px;
+  background-color: #71747770;
+  display: flex;
+
+  background: Linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.part1 {
+  width: 30%;
+}
+.part2 {
+  width: 60%;
+  background-image: url("https://images.unsplash.com/photo-1611744669444-5edf2ce1dd56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-position: center;
+}
+
+.part3 {
+  width: 10%;
+  background-color: blue;
+}
+.text-div {
+  position: absolute;
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-div > h1 {
+  font-size: 100px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 1000;
+  color: white;
+  margin-left: 40px;
+  line-height: 120px;
+  overflow: hidden;
+}
+.img-div {
+  background-color: rebeccapurple;
+  height: 460px;
+  width: 340px;
+  z-index: 1;
+  margin-left: -400px;
+  border-radius: 10px;
+  background-image: url("https://images.unsplash.com/photo-1617953141905-b27fb1f17d88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+.vertical-text {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  right: -260px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+  position: absolute;
+  transform: rotate(90deg);
+  font-size: 2.3rem;
+  font-weight: 1000;
+  height: max-content;
+  z-index: 1;
+}
+
+/* ================DETAILS================ */
+.fourthContainer {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+
+.li-batt {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  margin-top: -500px;
+}
+.li-inner {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* padding: 200px; */
+}
+.svgImg {
+  width: 100vw;
+  height: 70vh;
+}
+.p1 {
+  width: 40vw;
+  margin: 30px;
+  background-image: url("https://images.unsplash.com/photo-1612965110642-d2ed35011901?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  background-color: red;
+  border-radius: 42% 58% 39% 61% / 48% 21% 79% 52%;
+  box-shadow: 37px 24px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.content {
+  width: 30vw;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+.li-inner > .content > h1 {
+  font-size: 10rem;
+  margin-top: 60px;
+  margin-left: 30px;
+  letter-spacing: 3px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight:1000;
+}
+.content > p {
+  padding: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.p2 {
+  box-shadow: 37px 24px 16px 0px rgba(0, 0, 0, 0.1);
+  width: 40vw;
+  margin: 30px;
+  background-image: url("https://images.unsplash.com/photo-1605191737662-98ba90cb953e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-color: green;
+  border-radius: 69% 31% 29% 71% / 34% 47% 53% 66%;
+}
+.p3 {
+  box-shadow: 37px 24px 16px 0px rgba(0, 0, 0, 0.1);
+  width: 40vw;
+  margin: 30px;
+  background-image: url("https://images.unsplash.com/photo-1581244249923-172ef5029576?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+  border-radius: 42% 58% 59% 41% / 58% 47% 53% 42%;
+  background-color: grey;
+}
+/* ================OUR TEAM================== */
+.ourTeam {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  width: 350px;
+  height: 190px;
+  background: #fff;
+  overflow: visible;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.card:hover {
+  height: 450px;
+}
+.imgDiv {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.35);
+}
+.imgDiv img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.card:hover .imgDiv {
+  height: 250px;
+  width: 250px;
+}
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.card .content .details {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.card .content .details h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2rem;
+}
+.card .content .details h2 span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.card .content .details .data {
+  opacity: 100%;
+}
+/* ==============CONTACTS================ */
+.contacts {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #041c32; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactBG {
+  width: 25vw;
+  height: 25vw;
+  background-color: #b7b7b7;
+  /* transform: rotate(45deg); */
+  margin-top: -50px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactBG > input {
+  width: 80%;
+  height: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+.contactBG > textarea {
+  width: 80%;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.contactBG > button {
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #2c4c3b;
+  margin-top: 20px;
+  background: none;
+  color: #2c4c3b;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.contactBG > button:hover {
+  letter-spacing: 5px;
+  background-color: #2c4c3b;
+  color: white;
+}
+.header > h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  font-size: 6rem;
+  mix-blend-mode: difference;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  color: transparent;
+}
+.header {
+  /* width: 70vw; */
+  margin-top: 50px;
+  overflow: visible;
+  z-index: 1;
+}
+
+.end-wave {
+  width: 100vw;
+  height: 40vh;
+  overflow: hidden;
+  /* margin-top: 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* ==============FOOTER================== */
+.Footer {
+  width: 100%;
+  height: 400px;
+  background-color: #041c32;
+  display: flex;
+  /* margin-top: -50px; */
+  border-top: 1px solid white;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 33vw;
+  /* background-color: red; */
+}
+.left > h2 {
+  font-family: "Gruppo", cursive;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+.left > h4 {
+  font-family: "Gruppo", cursive;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 200;
+}
+.mid {
+  width: 33vw;
+  /* background-color: green; */
+}
+.mid > img {
+  height: 80%;
+  width: 30vw;
+  object-fit: contain;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.right {
+  width: 33vw;
+  /* background-color: black; */
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right > h3 {
+  color: white;
+  font-family: "Gruppo", cursive;
+  font-size: 2.3rem;
+}
+.socials {
+  display: flex;
+}
+.socials .images {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.socials .images img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
